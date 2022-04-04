@@ -1,23 +1,23 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <Home title="Title From App" />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from "./pages/Home/HomePage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    Home,
   },
 
   data: () => ({
     //
   }),
-}
+};
 </script>

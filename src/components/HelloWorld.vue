@@ -127,8 +127,5 @@ export default {
       },
     ],
   }),
-  computed() {
-    console.log({ size: this.$vuetify.breakpoint });
-  },
 };
 </script>
