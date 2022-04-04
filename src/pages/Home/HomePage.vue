@@ -1,18 +1,18 @@
 <template>
-  <v-container>
-    <h1>ini home : {{ title }}</h1>
-  </v-container>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+  </div>
 </template>
 
 <script>
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+
 export default {
-  props: ["title"],
-  data: () => {},
-  computed() {
-    console.log("Home computed");
-  },
-  created() {
-    console.log({ created: this.title });
+  name: "HomeView",
+  components: {
+    HelloWorld,
   },
 };
 </script>
